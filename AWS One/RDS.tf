@@ -16,7 +16,7 @@ resource "aws_db_instance" "primary_db" {
   engine                 = "mysql"
   engine_version         = "8.0.35"
   username               = "admin"
-  password               = "Manager(4242)"
+  password               = ""
   db_subnet_group_name   = aws_db_subnet_group.primary_db_subnet_group.id
   vpc_security_group_ids = [aws_security_group.web-sg.id]
   skip_final_snapshot    = true
